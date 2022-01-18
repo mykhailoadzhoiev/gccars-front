@@ -1,0 +1,6 @@
+// export const BASE_URL = 'http://7d5f-176-125-44-180.ngrok.io'
+export const BASE_URL = 'https://gccars-backend.azurewebsites.net'
+export const moneyAddress = '0x58ccBfedE42Db49a20Fe74D9790057f1Dc538648'
+export const nftAddress = '0xaC5DAbDFB629C58B85e724Ab82859CACdc45a2a3'
+export const publicKey = '0x9dA74236a98781Ad458eB16D28D9A21131D2e596'
+export const privateKey = 'ef02668492ab2a43928fd600db784baa2efce622fe50657cf9134c02add5a611'

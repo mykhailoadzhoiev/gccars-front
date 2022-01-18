@@ -1,0 +1,162 @@
+.page-content {
+    background: url('../../asset/background.jpg') center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    min-height: 100vh;
+
+    &__tabs {
+        display: flex;
+        height: 2.5vw;
+        font-size: 1vw;
+        font-weight: 700;
+        margin-bottom: -0.22vw;
+
+        &-toggle {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // text-decoration: none;
+            // border: 0.3vw solid #B76D29;
+            // height: 100%;
+            // min-width: 15%;
+            // background: rgba(34, 11, 5, 0.8);
+            // white-space: nowrap;
+            // padding-left: 2vw;
+            // padding-right: 2vw;
+            // border-top-left-radius: 1.8vw;
+            // border-top-right-radius: 1.8vw;
+            // margin-right: -0.3vw;
+            // color: #FFEFCF;
+            // position: relative;
+            // cursor: pointer;
+
+            &.active {
+                // content: '';
+                // background: #230b05;
+                // height: 0.5vw;
+                // left: 0;
+                // right: 0;
+                // position: absolute;
+                // bottom: -0.5vw;
+                border-bottom: #220b05;
+
+                // &::before {
+                //     content: '';
+                //     background: #230b05;
+                //     height: 0.5vw;
+                //     left: 0;
+                //     right: 0;
+                //     position: absolute;
+                //     bottom: -0.5vw;
+                // }
+            }
+
+            // &:hover {
+            //     background: #B76D29;
+            //     border-bottom-color: #B76D29;
+            // }
+        }
+    }
+
+    & .tab-content {
+        border-radius: 0 1.93vw 1.93vw 1.93vw;
+        border: 0.3vw solid #B76D29;
+        background: rgba(34, 11, 5, 0.8);
+
+        position: relative;
+        z-index: 1;
+
+        & .tab-pane {
+            padding-right: 1vw;
+
+            // &.p {
+            //     padding: 2vw;
+            // }
+
+            &__header {
+                border-bottom: 0.3vw dotted #AA5B1F;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                // margin-left: 2vw;
+                // padding-top: 1vw;
+                padding-bottom: 0.5vw;
+                position: relative;
+
+                & .searchForm {
+                    width: 22vw;
+                    display: flex;
+                    align-items: center;
+                    height: 2vw;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: .7vw;
+                    margin: auto;
+
+                    &__input {
+                        border: none;
+                        border-radius: 2vw;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(233, 159, 90, 0.6);
+                        box-shadow: inset 0px 0.1vw 0.1vw rgba(0, 0, 0, 0.25);
+                        font-size: 1vw;
+                        padding-left: 1vw;
+                        padding-right: 5vw;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        & .totalList {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vw;
+            margin-bottom: 1vw;
+
+            &__el {
+                padding: 0.7vw;
+                background: rgba(233, 159, 90, 0.6);
+                width: calc(100%/3 - 1vw);
+                border-radius: 1vw;
+            }
+        }
+
+        .results {
+            display: flex;
+            max-height: 57vh;
+            height: 57vh;
+
+
+            @media(min-width: 2560px) {
+                height: calc(70vh - 11vw);
+            }
+
+
+            &__titles {
+                display: flex;
+            }
+
+            &__el {
+                width: 50%;
+                // border-right: 0.3vw dotted #E99F5A;
+
+                &-table {
+                    width: 100%;
+
+                    &-header {
+                        border-bottom: 0.2vw dotted #E99F5A;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
